@@ -17,7 +17,7 @@ function fuzzyMatch(x, letter) {
 function matchName(x, property){
         
     let elementWithSameName = x.filter(xt => {return xt.name.toUpperCase().slice(0,property.length) === property.toUpperCase()
-    // .toUpperCase().slice(0,property.length) === property.toUpperCase()
+//     Code for this.. Small Pieces at a time..  KNow on the Basic level what the funnction need to do... 
     })
        return elementWithSameName
     }
