@@ -14,7 +14,10 @@ function fuzzyMatch(x, letter) {
 }
     
        
-
-function matchName(array, name) {
-    
-}
+function matchName(x, property){
+        
+    let elementWithSameName = x.filter(xt => {return xt.name.toUpperCase().slice(0,property.length) === property.toUpperCase()
+    // .toUpperCase().slice(0,property.length) === property.toUpperCase()
+    })
+       return elementWithSameName
+    }
