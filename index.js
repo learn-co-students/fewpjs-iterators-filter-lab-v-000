@@ -3,6 +3,7 @@
 const findMatching = (driverArray, query) => {
 	return driverArray.filter((el) => el.toLowerCase() === query.toLowerCase())
 }
+
 const fuzzyMatch = (driversArray, query) => {
 	return driversArray.filter((el) => {
 		let elArray = el.split('');
@@ -12,7 +13,6 @@ const fuzzyMatch = (driversArray, query) => {
 		}
 	})
 }
-
 
 const matchName = (driversArray, query) => {
 	return driversArray.filter((el) => {
