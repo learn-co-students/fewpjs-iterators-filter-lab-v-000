@@ -4,7 +4,8 @@ return result
 }
 
 function fuzzyMatch(drivers,string){
-  let result = drivers.filter(word => word == string)
+  let lengthWord = string.length
+  let result = drivers.filter(word => word.slice(0,lengthWord) === string)
 return result
 
 }
