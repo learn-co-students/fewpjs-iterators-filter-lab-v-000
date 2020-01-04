@@ -1,5 +1,4 @@
 # Iterator Drill: Filter
-
 ## Learning Goals
 
 * Define how the `filter()` method works
