@@ -15,9 +15,3 @@ function matchName(drivers, string) {
         return driver.name.toLowerCase().indexOf(string.toLowerCase()) !== -1
     })
 }
-
-// function filterItems(arr, query) {
-//     return arr.filter(function(el) {
-//         return el.toLowerCase().indexOf(query.toLowerCase()) !== -1
-//     })
-//   }
