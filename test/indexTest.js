@@ -36,12 +36,12 @@ describe('index.js', function () {
     });
 
     it('does not return drivers if only middle or ending letters match', function () {
+      expect(fuzzyMatch(drivers, 'mm')).to.have.members([]);
       expect(fuzzyMatch(drivers, 'y')).to.have.members([]);
     });
 
-    it('does not return drivers if only middle or ending letters match', function () {
-      expect(fuzzyMatch(drivers, 'mm')).to.have.members([]);
-    });
+    // it('does not return drivers if only middle or ending letters match', function () {
+    // });
   });
 
   describe('matchName()', function () {
