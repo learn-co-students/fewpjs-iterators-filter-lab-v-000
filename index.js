@@ -45,7 +45,9 @@
         // Annette name
         // Sarah name
         // bobby name
-        return name.startsWith().indexOf(query.toLowerCase()) !== -1
+        //return name.toLowerCase().indexOf(query.toLowerCase()) !== -1
+        return (name.startWith === query)
+        console.log(name.startWith(query), "startsWithQuery")
     })
   }
 
