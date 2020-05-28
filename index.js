@@ -32,8 +32,20 @@
 // Write fuzzyMatch - This function takes an array of drivers and a string 
 // as arguments for querying the array, 
 // and returns all drivers whose names begin with the provided letters.
-  function fuzzyMatch(drivers, driver) {
+  function fuzzyMatch(drivers, query) {
+      console.log(drivers, "drivers")
+    //   [ 'Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'bobby' ] drivers
+    //   console.log(query, "query")
+    //   Sa query
     return drivers.filter(function(name) {
-        return name.toLowerCase().indexOf(driver.toLowerCase()) !== -1
+        console.log(name, "name")
+        // Bobby name
+        // Sammy name
+        // Sally name
+        // Annette name
+        // Sarah name
+        // bobby name
+        return name.toLowerCase().indexOf(query.toLowerCase()) !== -1
     })
   }
+
