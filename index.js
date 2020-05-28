@@ -45,7 +45,7 @@
         // Annette name
         // Sarah name
         // bobby name
-        return name.toLowerCase().indexOf(query.toLowerCase()) !== -1
+        return name.startsWith().indexOf(query.toLowerCase()) !== -1
     })
   }
 
