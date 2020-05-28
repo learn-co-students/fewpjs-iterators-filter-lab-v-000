@@ -28,12 +28,12 @@
 // Write fuzzyMatch - This function takes an array of drivers and a string 
 // as arguments for querying the array, 
   function fuzzyMatch(drivers, query) {
-      console.log(drivers, "drivers")
+    //   console.log(drivers, "drivers")
     //   [ 'Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'bobby' ] drivers
     //   console.log(query, "query")
     //   Sa query
     return drivers.filter(function(name) {
-        console.log(name, "name")
+        // console.log(name, "name")
         // Bobby name
         // Sammy name
         // Sally name
@@ -48,10 +48,21 @@
 //   Write matchName - 
 // This function takes an array of drivers and a string as arguments. 
 // In this function, each element of the drivers array is a JavaScript object that has a property of name. 
-// The function should return each element whose name property matches the provided string argument.
   function matchName(drivers, query) {
-      console.log(drivers, "drivers")
-      console.log(query, "query")
-
+    // console.log(drivers, "drivers")
+    //   [
+    // { name: 'Bobby', hometown: 'Pittsburgh' },
+    // { name: 'Sammy', hometown: 'New York' },
+    // { name: 'Sally', hometown: 'Cleveland' },
+    // { name: 'Annette', hometown: 'Los Angeles' },
+    // { name: 'Bobby', hometown: 'Tampa Bay' }
+    // ] drivers
+    // console.log(query, "query")
+    // Bobby query
+    // TEMPLATE
+    // const win = record.find( ({ result }) => result === 'W')
+    // The function should return each element whose name property matches the provided string argument.
+    let driver = drivers.filter( ({ name }) => name === query)
+    return driver
   }
 
