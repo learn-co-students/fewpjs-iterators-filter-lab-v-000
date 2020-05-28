@@ -1,8 +1,4 @@
 // Code your solution here
-//  const findMatching = drivers.filter(driver => driver === driver.driver ) 
-//  console.log(drivers, "drivers")
-//  console.log(driver, "driver")
-
 // TEMPLATE
 // function findMatching(arr, query) {
 //     return arr.filter(function(el) {
