@@ -45,3 +45,13 @@
     })
   }
 
+//   Write matchName - 
+// This function takes an array of drivers and a string as arguments. 
+// In this function, each element of the drivers array is a JavaScript object that has a property of name. 
+// The function should return each element whose name property matches the provided string argument.
+  function matchName(drivers, query) {
+      console.log(drivers, "drivers")
+      console.log(query, "query")
+
+  }
+
