@@ -14,10 +14,9 @@ function fuzzyMatch(list, name) {
     
 }
 
-function matchName(name) {
-    let y = name.length
+function matchName(list, name) {
     return list.filter((driverName) => {
-        return driverName === name;
+        return driverName.name === name;
   });
     
 }
