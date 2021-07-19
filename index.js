@@ -1,12 +1,12 @@
 // Code your solution here
-function findMatching(drivers,name){
-    return drivers.filter(d => d.toLowerCase() === name.toLowerCase());
+function findMatching(drivers, string){
+    return drivers.filter(d => d.toLowerCase() === string.toLowerCase());
 };
 
-function fuzzyMatch(drivers, letters){
-    return drivers.filter(d => d.slice(0, letters.length) === letters);
+function fuzzyMatch(drivers, string){
+    return drivers.filter(d => d.slice(0, string.length)=== string);
 };
 
 function matchName(drivers, name){
-    return drivers.filter(d => d.name === name);
+    return drivers.filter(d => d.name === name );
 };
